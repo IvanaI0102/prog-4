@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Graph",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${fileDirname}\\graph.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": true
+    }
+  ]
+}
