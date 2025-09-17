@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\Djikstra.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\Djikstra.dir/objects.a @CMakeFiles\Djikstra.dir\objects1.rsp
+C:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\Djikstra.dir/objects.a -Wl,--no-whole-archive -o Djikstra.exe -Wl,--out-implib,libDjikstra.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Djikstra.dir\linkLibs.rsp
