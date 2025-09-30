@@ -58,37 +58,48 @@ vector<vector<int>> generateConnectedGraph(int n) {
 
     return edges;
 }
-
-
 int main() {
     int n = 50;                
-    auto edges = generateConnectedGraph(n);
-
-    cout << "Generated edges (u v w):\n";
-    for (auto &e : edges) {
-        cout << e[0] << " " << e[1] << " " << e[2] << "\n";
-    }
-
-    cout << "\nRunning Bellman-Ford from source 0...\n";
-    vector<int> dist = bellmanFord(n, edges, 0);
-
     ofstream fout("output.txt");
-
     if (!fout.is_open()) {
-        cerr << "Error: could not open output.txt\n";
+        cerr << "Error\n";
         return 1;
     }
 
-    if (dist.size() == 1 && dist[0] == -1) {
-        fout << "Negative weight cycle detected!\n";
-    } else {
-        for (int i = 0; i < n; i++) {
-            fout << "Distance from 0 to " << i << " = ";
-            if (dist[i] == 1e8) fout << "INF";
-            else fout << dist[i];
-            fout << "\n";
+    for (int g = 1; g <= 10; g++) {
+        auto edges = generateConnectedGraph(n);
+
+        
+        cout << "Graph " << g << "\n";
+        cout << "Generirani rebra (u v w):\n";
+        for (auto &e : edges) {
+            cout << e[0] << " " << e[1] << " " << e[2] << "\n";
         }
+
+        
+        vector<int> dist = bellmanFord(n, edges, 0);
+
+    
+        fout << "Graph " << g << " \n";
+        fout << "Generirani rabovi (u v w):\n";
+        for (auto &e : edges) {
+            fout << e[0] << " " << e[1] << " " << e[2] << "\n";
+        }
+        fout << "\n";
+
+        if (dist.size() == 1 && dist[0] == -1) {
+            fout << "Negativen ciklus!\n";
+        } else {
+            for (int i = 0; i < n; i++) {
+                fout << "Rastojanie od 0 do " << i << " = ";
+                if (dist[i] == 1e8) fout << "INF";
+                else fout << dist[i];
+                fout << "\n";
+            }
+        }
+        fout << "\n";
     }
 
     fout.close();
+    return 0;
 }
