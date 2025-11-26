@@ -1,0 +1,4 @@
+C:/Users/Ivana/Desktop/testRepo/build/CMakeFiles/Djikstra.dir
+C:/Users/Ivana/Desktop/testRepo/build/CMakeFiles/Graph.dir
+C:/Users/Ivana/Desktop/testRepo/build/CMakeFiles/edit_cache.dir
+C:/Users/Ivana/Desktop/testRepo/build/CMakeFiles/rebuild_cache.dir

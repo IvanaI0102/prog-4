@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/Users/Ivana/Desktop/testRepo/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\Djikstra.dir\\dijkstra.cpp.obj -c C:\\Users\\Ivana\\Desktop\\testRepo\\dijkstra.cpp",
+  "file": "C:/Users/Ivana/Desktop/testRepo/dijkstra.cpp",
+  "output": "CMakeFiles/Djikstra.dir/dijkstra.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ivana/Desktop/testRepo/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\Graph.dir\\graph.cpp.obj -c C:\\Users\\Ivana\\Desktop\\testRepo\\graph.cpp",
+  "file": "C:/Users/Ivana/Desktop/testRepo/graph.cpp",
+  "output": "CMakeFiles/Graph.dir/graph.cpp.obj"
+}
+]
